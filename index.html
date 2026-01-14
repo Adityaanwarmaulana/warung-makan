@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warteg Berkah – Masakan Rumahan</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F97316",
+              primaryDark: "#EA580C",
+              secondary: "#DC2626",
+              accent: "#16A34A",
+              dark: "#1F2937",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-white text-gray-800 scroll-smooth">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-extrabold text-primary tracking-wide">
+          Warteg Berkah
+        </h1>
+
+        <a
+          href="#pesan"
+          class="bg-primary text-white px-5 py-2 rounded-xl font-semibold hover:bg-primaryDark hover:shadow-lg transition-all"
+        >
+          Pesan Sekarang
+        </a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      class="pt-28 pb-20 bg-gradient-to-br from-orange-50 via-white to-orange-100"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-14 items-center"
+      >
+        <div>
+          <span
+            class="inline-flex items-center gap-2 bg-secondary/90 text-white px-4 py-1 rounded-full text-sm mb-5"
+          >
+            🍽️ Masakan Rumahan Sehari-hari
+          </span>
+
+          <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+            Warteg & Rumah Makan
+            <span class="text-primary block mt-2">
+              Enak • Hemat • Mengenyangkan
+            </span>
+          </h2>
+
+          <p class="text-gray-600 mb-8 max-w-xl text-lg">
+            Masakan rumahan segar setiap hari, cocok untuk makan harian,
+            karyawan, dan kebutuhan katering.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mb-10">
+            <div
+              class="bg-white px-5 py-3 rounded-xl shadow-sm font-semibold text-sm"
+            >
+              🕒 06.00 – 22.00
+            </div>
+            <div
+              class="bg-white px-5 py-3 rounded-xl shadow-sm font-semibold text-sm"
+            >
+              📍 Makan di Tempat & Take Away
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/6281234567890"
+            class="inline-flex items-center gap-3 bg-accent text-white px-10 py-4 rounded-2xl font-bold shadow-xl hover:bg-green-600 hover:-translate-y-1 transition-all"
+          >
+            💬 Pesan via WhatsApp
+          </a>
+        </div>
+
+        <div class="relative">
+          <div
+            class="absolute -inset-3 bg-primary/20 blur-2xl rounded-full"
+          ></div>
+          <img
+            src="assets/img/hero.png"
+            loading="lazy"
+            class="relative w-full h-[420px] object-cover rounded-3xl shadow-2xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8 text-center">
+        <div
+          class="group p-6 bg-orange-50 rounded-2xl hover:bg-primary hover:text-white transition-all"
+        >
+          <p class="text-4xl mb-3 group-hover:scale-110 transition">🍚</p>
+          <h4 class="font-bold text-lg">Masakan Fresh</h4>
+          <p class="text-sm opacity-80">Dimasak setiap hari</p>
+        </div>
+
+        <div
+          class="group p-6 bg-orange-50 rounded-2xl hover:bg-primary hover:text-white transition-all"
+        >
+          <p class="text-4xl mb-3 group-hover:scale-110 transition">💰</p>
+          <h4 class="font-bold text-lg">Harga Terjangkau</h4>
+          <p class="text-sm opacity-80">Ramah kantong</p>
+        </div>
+
+        <div
+          class="group p-6 bg-orange-50 rounded-2xl hover:bg-primary hover:text-white transition-all"
+        >
+          <p class="text-4xl mb-3 group-hover:scale-110 transition">🚀</p>
+          <h4 class="font-bold text-lg">Pelayanan Cepat</h4>
+          <p class="text-sm opacity-80">Siap makan & takeaway</p>
+        </div>
+
+        <div
+          class="group p-6 bg-orange-50 rounded-2xl hover:bg-primary hover:text-white transition-all"
+        >
+          <p class="text-4xl mb-3 group-hover:scale-110 transition">📦</p>
+          <h4 class="font-bold text-lg">Terima Katering</h4>
+          <p class="text-sm opacity-80">Harian & acara</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="bg-gray-50 py-24">
+      <div class="max-w-7xl mx-auto px-4">
+        <h3 class="text-3xl font-extrabold text-center mb-14">Menu Favorit</h3>
+
+        <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10">
+          <!-- ITEM -->
+          <div
+            class="bg-white rounded-3xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all"
+          >
+            <img
+              src="assets/img/produk-ayam.jpg"
+              loading="lazy"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="font-bold text-lg">Ayam Goreng</h4>
+              <p class="text-gray-600 text-sm">Gurih & renyah</p>
+              <p class="text-primary font-extrabold text-xl mt-4">Rp 12.000</p>
+            </div>
+          </div>
+
+          <!-- COPY ITEM LAIN (sama gaya) -->
+          <!-- Telur -->
+          <div
+            class="bg-white rounded-3xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all"
+          >
+            <img
+              src="assets/img/produk-telur.jpg"
+              loading="lazy"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="font-bold text-lg">Telur Balado</h4>
+              <p class="text-gray-600 text-sm">Pedas nikmat</p>
+              <p class="text-primary font-extrabold text-xl mt-4">Rp 6.000</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-3xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all"
+          >
+            <img
+              src="assets/img/produk-tempe.jpg"
+              loading="lazy"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="font-bold text-lg">Tempe Orek</h4>
+              <p class="text-gray-600 text-sm">Manis gurih</p>
+              <p class="text-primary font-extrabold text-xl mt-4">Rp 5.000</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-3xl shadow-md overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all"
+          >
+            <img
+              src="assets/img/produk-sayur.jpg"
+              loading="lazy"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="font-bold text-lg">Sayur Asem</h4>
+              <p class="text-gray-600 text-sm">Segar & sehat</p>
+              <p class="text-primary font-extrabold text-xl mt-4">Rp 4.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="py-24 bg-white">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-extrabold mb-14">Apa Kata Pelanggan</h3>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <div
+            class="p-8 bg-gray-50 rounded-2xl shadow-sm hover:shadow-xl transition"
+          >
+            <p class="italic text-gray-600">“Enak dan porsinya banyak.”</p>
+            <p class="mt-6 font-bold">– Budi</p>
+          </div>
+          <div
+            class="p-8 bg-gray-50 rounded-2xl shadow-sm hover:shadow-xl transition"
+          >
+            <p class="italic text-gray-600">“Langganan katering kantor.”</p>
+            <p class="mt-6 font-bold">– Ibu Rina</p>
+          </div>
+          <div
+            class="p-8 bg-gray-50 rounded-2xl shadow-sm hover:shadow-xl transition"
+          >
+            <p class="italic text-gray-600">“Murah tapi rasa rumahan.”</p>
+            <p class="mt-6 font-bold">– Andi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PESAN -->
+    <section id="pesan" class="bg-orange-50 py-24">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-extrabold mb-4">Pesan Sekarang</h3>
+        <p class="text-gray-600 mb-8">Jl. Contoh Alamat No. 12</p>
+
+        <a
+          href="https://wa.me/6281234567890"
+          class="inline-block bg-accent text-white px-12 py-4 rounded-2xl font-bold shadow-lg hover:bg-green-600 hover:scale-105 transition mb-12"
+        >
+          Chat WhatsApp
+        </a>
+
+        <iframe
+          class="w-full h-72 rounded-3xl shadow-xl"
+          src="https://www.google.com/maps?q=jakarta&output=embed"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white py-10 text-center">
+      <p class="text-sm opacity-90">
+        © 2026 Warteg Berkah – Website Profesional
+      </p>
+    </footer>
+
+    <!-- FLOATING WA -->
+    <a
+      href="https://wa.me/6281234567890"
+      class="fixed bottom-6 right-6 bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-2xl hover:scale-110 transition"
+    >
+      💬
+    </a>
+
+    <!-- BACK TO TOP -->
+    <button
+      onclick="window.scrollTo({top:0,behavior:'smooth'})"
+      class="fixed bottom-28 right-6 bg-primary text-white w-12 h-12 rounded-full shadow-lg hover:bg-primaryDark transition"
+    >
+      ↑
+    </button>
+  </body>
+</html>
